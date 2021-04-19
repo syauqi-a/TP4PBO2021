@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+
+  <style>
+    table, th, td {
+      border-collapse: collapse;
+    }
+    th, td {
+      padding: 10px;
+    }
+  </style>
+  <title>Buku Hutang</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <form class='mr-auto' action="index.php" method="POST">
+    <button type="submit" name="tambah" class="btn btn-success">Tambah penghutang</button>
+    <button type="submit" name="catat" value="hutang" class="btn btn-success">Catat hutang</button>
+    <button type="submit" name="catat" value="bayar" class="btn btn-success">Bayar hutang</button>
+    <button type="submit" name="lihat" class="btn btn-primary">Lihat data</button>
+  </form>
+  <form class="form-inline my-2 my-lg-0" action="index.php" method="POST" >
+    <input class="form-control mr-sm-2" type="search" placeholder="Kata kunci" aria-label="Kata kunci" name="kata_kunci" required>
+    <button class="btn btn-outline-success my-2 my-sm-0" type="submit" name="cari">Cari</button>
+  </form>
+  </nav>
+
+  <br />
+  <br />
+
+  <div style="margin-left: 5%">
+    <!-- DATA YG AKAN DIGANTI -->
+    <div id='form'></div>
+
+  <div style="display: inline-block; ">
+    <!-- DATA YG AKAN DIGANTI -->
+    <div id='ubah'></div>
+  </div>
+
+  </div>
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+  </script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+  </script>
+</body>
+
+</html>
